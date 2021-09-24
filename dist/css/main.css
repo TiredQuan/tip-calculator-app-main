@@ -1,0 +1,97 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  background-color: #c5e4e7;
+}
+
+.container {
+  width: 375px;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  padding: 0 25px;
+  border-radius: 20px;
+}
+
+h1, h2, h3 {
+  font-size: 1.05rem;
+  color: #5e7a7d;
+  text-align: left;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+  text-align: right;
+  background-color: #f4fafa;
+  color: #00494d;
+  font-family: "Space Mono",monospace;
+  font-weight: 700;
+}
+
+#bill {
+  position: relative;
+}
+
+.billing::before {
+  content: url(../../images/icon-dollar.svg);
+  position: absolute;
+  bottom: 9px;
+  left: 25px;
+}
+
+#discount-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.input {
+  width: 312px;
+  height: 48px;
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+#calc-logo {
+  background: center/cover url(../../images/logo.svg) no-repeat;
+  height: 54px;
+  width: 87px;
+  margin: 50px auto;
+}
+
+#people {
+  position: relative;
+}
+
+.people {
+  content: url(../../images/icon-person.svg);
+  position: absolute;
+  bottom: 9px;
+  left: 25px;
+}
+
+.dst-btn {
+  width: 148px;
+  height: 48px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.dark-green {
+  color: white;
+  background-color: #00494d;
+  border: none;
+}
+/*# sourceMappingURL=main.css.map */

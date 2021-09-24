@@ -5,3 +5,76 @@
 
 @import 'base/reset';
 @import 'base/typography';
+
+
+.container {
+    width: 375px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    padding: 0 25px;
+    border-radius: 20px;
+}
+h1,h2,h3 {
+    font-size: $font-size*0.7;
+    color: $dark-grayish-cyan;
+    text-align: left;
+}
+input {
+    border-radius: 5px;
+    border: none;
+    text-align: right;
+    background-color: $light-grayish-cyan2;
+    color: $very-dark-cyan;
+    font-family: "Space Mono",monospace;
+    font-weight: map-get($weights, bold );
+}
+#bill{
+    position: relative;
+}
+.billing::before{
+    content: url(../../images/icon-dollar.svg);
+    position: absolute;
+    bottom: 9px;
+    left: 25px;
+}
+#discount-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.input {
+    width: 312px;
+    height: 48px;
+    font-size: $font-size;
+    padding: 0 10px;
+}
+#calc-logo {
+    background: center/cover url(../../images/logo.svg) no-repeat;
+    height: 54px;
+    width: 87px;
+    margin: 50px auto;
+}
+#people{
+    position: relative;
+}
+.people{
+    content: url(../../images/icon-person.svg);
+    position: absolute;
+    bottom: 9px;
+    left: 25px;
+}
+.dst-btn {
+    width: 148px;
+    height: 48px;
+    font-size: $font-size;
+    font-weight: map-get($weights, bold );
+    border-radius: 5px;
+    margin: auto;
+}
+.dark-green{
+    color: white;
+    background-color: $very-dark-cyan;
+    border: none;
+}
