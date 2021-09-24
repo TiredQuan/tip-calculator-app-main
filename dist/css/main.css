@@ -14,24 +14,8 @@ body {
   background-color: white;
   text-align: center;
   margin: auto;
-  padding: 0 25px;
+  padding: 20px 25px;
   border-radius: 20px;
-}
-
-h1, h2, h3 {
-  font-size: 1.05rem;
-  color: #5e7a7d;
-  text-align: left;
-}
-
-input {
-  border-radius: 5px;
-  border: none;
-  text-align: right;
-  background-color: #f4fafa;
-  color: #00494d;
-  font-family: "Space Mono",monospace;
-  font-weight: 700;
 }
 
 #bill {
@@ -73,7 +57,7 @@ input {
   position: relative;
 }
 
-.people {
+.people::before {
   content: url(../../images/icon-person.svg);
   position: absolute;
   bottom: 9px;
@@ -92,6 +76,100 @@ input {
 .dark-green {
   color: white;
   background-color: #00494d;
+}
+
+.dark-green:hover {
+  color: #00494d;
+  background-color: #c5e4e7;
+}
+
+#total {
+  background-color: #00494d;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+}
+
+#total div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#total h4 {
+  text-align: left;
+  margin: 0;
+}
+
+#total span {
+  font-size: 0.9rem;
+  color: #5e7a7d;
+}
+
+#total p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #26c0ab;
+  margin: 10px 0;
+}
+
+#total button {
+  color: #00494d;
+  background-color: #26c0ab;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 280px;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+#total > button:hover {
+  color: #00494d;
+  background-color: #c5e4e7;
+}
+
+#total > * {
+  display: block;
+}
+
+h1, h2, h3 {
+  font-size: 1.05rem;
+  color: #5e7a7d;
+  text-align: left;
+}
+
+input {
+  border-radius: 5px;
   border: none;
+  text-align: right;
+  background-color: #f4fafa;
+  color: #00494d;
+  font-family: "Space Mono",monospace;
+  font-weight: 700;
+  caret-color: #26c0ab;
+}
+
+input:focus {
+  outline: 2px solid #26c0ab;
+}
+
+button {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

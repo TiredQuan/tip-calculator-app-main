@@ -12,23 +12,10 @@
     background-color: white;
     text-align: center;
     margin: auto;
-    padding: 0 25px;
+    padding: 20px 25px;
     border-radius: 20px;
 }
-h1,h2,h3 {
-    font-size: $font-size*0.7;
-    color: $dark-grayish-cyan;
-    text-align: left;
-}
-input {
-    border-radius: 5px;
-    border: none;
-    text-align: right;
-    background-color: $light-grayish-cyan2;
-    color: $very-dark-cyan;
-    font-family: "Space Mono",monospace;
-    font-weight: map-get($weights, bold );
-}
+
 #bill{
     position: relative;
 }
@@ -59,7 +46,7 @@ input {
 #people{
     position: relative;
 }
-.people{
+.people::before{
     content: url(../../images/icon-person.svg);
     position: absolute;
     bottom: 9px;
@@ -69,12 +56,84 @@ input {
     width: 148px;
     height: 48px;
     font-size: $font-size;
-    font-weight: map-get($weights, bold );
+    font-weight: map-get($weights, bold ); 
     border-radius: 5px;
     margin: auto;
 }
 .dark-green{
     color: white;
     background-color: $very-dark-cyan;
+}
+.dark-green:hover{
+    color: $very-dark-cyan;
+    background-color: $light-grayish-cyan;
+}
+#total{
+    background-color: $very-dark-cyan;
+    color: white;
+    padding:20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h4{
+        text-align: left;
+        margin: 0;
+    }
+    span{
+        font-size: $font-size*0.6;
+        color: $dark-grayish-cyan;
+    }
+    p{
+        font-size: $font-size*1.6;
+        font-weight: map-get($weights, bold );
+        color: $strong-cyan;
+        margin: 10px 0;
+    }
+    button{
+        color: $very-dark-cyan;
+        background-color: $strong-cyan;
+        margin: 0 auto;
+        text-transform: uppercase;
+        width: 280px;
+        height: 48px;
+        border-radius: 5px;
+        font-size: $font-size*0.8;
+        letter-spacing: 2px;
+    }
+}
+#total>button:hover{
+    color:$very-dark-cyan;
+    background-color: $light-grayish-cyan;
+}
+#total>*{
+    display: block;
+}
+h1,h2,h3 {
+    font-size: $font-size*0.7;
+    color: $dark-grayish-cyan;
+    text-align: left;
+}
+input {
+    border-radius: 5px;
     border: none;
+    text-align: right;
+    background-color: $light-grayish-cyan2;
+    color: $very-dark-cyan;
+    font-family: "Space Mono",monospace;
+    font-weight: map-get($weights, bold );
+    caret-color: $strong-cyan;
+}
+input:focus{
+    outline: 2px solid $strong-cyan;
+}
+button{
+    border: none;
+    font-size: $font-size;
+    font-weight: map-get($weights, bold );  
+    cursor: pointer;
 }
