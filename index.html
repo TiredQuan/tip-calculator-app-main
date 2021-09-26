@@ -21,35 +21,39 @@
 <main id="container">
   <div id="calc-logo" title="Logo"></div>
   <div class="container">
-    <section id="bill" title="bill">
-      <h1>Bill</h1>
-      <div class="billing">
-          <input class="input" type="text" name="Bill" placeholder="0" id="" maxlength="6">
-        </div>
-    </section>
-      <section id="tip-percent">
-        <h2>Select Tip %</h2>
-        <div id="discount-grid">
-          <button class="dark-green dst-btn">5%</button>
-          <button class="dark-green dst-btn">10%</button>
-          <button class="dark-green dst-btn">15%</button>
-          <button class="dark-green dst-btn">25%</button>
-          <button class="dark-green dst-btn">50%</button>
-          <input class="dst-btn" type="text" name="" placeholder="Custom" id="" maxlength="2">
-        </div>
+    <div class="left">
+      <section id="bill" title="bill">
+        <h1>Bill</h1>
+        <div class="billing">
+            <input class="input" type="text" name="Bill" placeholder="0" id="" maxlength="6">
+          </div>
       </section>
-      <section id="people" title="Number of people">
-        <h2>Number of People</h2>
-        <div class="people"><input class="input" type="text" name="Bill" placeholder="0" id="" maxlength="2"></div>
-      </section>
+        <section id="tip-percent">
+          <h2>Select Tip %</h2>
+          <div id="discount-grid">
+            <button class="dark-green dst-btn">5%</button>
+            <button class="dark-green dst-btn">10%</button>
+            <button class="dark-green dst-btn">15%</button>
+            <button class="dark-green dst-btn">25%</button>
+            <button class="dark-green dst-btn">50%</button>
+            <input class="dst-btn" type="text" name="" placeholder="Custom" id="" maxlength="2">
+          </div>
+        </section>
+        <section id="people" title="Number of people">
+          <h2>Number of People</h2>
+          <div class="people"><input class="input" type="text" name="Bill" placeholder="0" id="" maxlength="2"></div>
+        </section>
+    </div>
       <section id="total">
         <div>
-          <h4>Tip Amount<br><span>/ person</span></h4>
-          <p>$0.0</p>
-        </div>
-        <div>
-          <h4>Total<br><span>/ person</span></h4>
-          <p>$0.0</p>
+          <div>
+            <h4>Tip Amount<br><span>/ person</span></h4>
+            <p>$0.00</p>
+          </div>
+          <div>
+            <h4>Total<br><span>/ person</span></h4>
+            <p>$0.00</p>
+          </div>
         </div>
        <button>Reset</button>
       </section>
