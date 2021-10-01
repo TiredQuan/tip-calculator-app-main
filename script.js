@@ -73,12 +73,6 @@ document.addEventListener('keyup',e=()=>{
         document.getElementById('reset').disabled = true
     }
 })
-document.getElementById('biller').addEventListener('blur',e=()=>{
-    billCheck()
-})
-document.getElementById('numPp').addEventListener('blur',e=()=>{
-    peopleCheck()
-})
 resetClick =()=>{
     document.getElementById('biller').value=''
     document.getElementById('numPp').value=''
