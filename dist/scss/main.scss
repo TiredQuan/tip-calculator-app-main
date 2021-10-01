@@ -56,6 +56,9 @@
     height: 54px;
     width: 87px;
     margin: 50px auto;
+    @media screen and (min-width:$desktop){
+        margin: 100px auto 100px auto;
+    }
 }
 #people{
     position: relative;
@@ -170,5 +173,32 @@ button{
         p{
             font-size: $font-size*2;
         }
+        button{
+            width: 334px;
+        }
     }
+}
+#reset:disabled{
+    background-color: $dark-grayish-cyan;
+    cursor: not-allowed;
+}
+#reset:disabled:hover{
+    background-color: $dark-grayish-cyan;
+    cursor: not-allowed;
+}
+
+.active{
+    background-color: $strong-cyan;
+    color:$very-dark-cyan
+}
+.error{
+
+    outline: 2px solid rgb(155, 1, 1);
+}
+.error-msg{
+    position: absolute;
+    top: -14px;
+    right: 0;
+    color:rgb(155, 1, 1);
+    display: none;
 }

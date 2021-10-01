@@ -81,6 +81,12 @@ body {
   margin: 50px auto;
 }
 
+@media screen and (min-width: 56.25rem) {
+  #calc-logo {
+    margin: 100px auto 100px auto;
+  }
+}
+
 #people {
   position: relative;
 }
@@ -230,5 +236,35 @@ button {
   #total p {
     font-size: 3rem;
   }
+  #total button {
+    width: 334px;
+  }
+}
+
+#reset:disabled {
+  background-color: #5e7a7d;
+  cursor: not-allowed;
+}
+
+#reset:disabled:hover {
+  background-color: #5e7a7d;
+  cursor: not-allowed;
+}
+
+.active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.error {
+  outline: 2px solid #9b0101;
+}
+
+.error-msg {
+  position: absolute;
+  top: -14px;
+  right: 0;
+  color: #9b0101;
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
